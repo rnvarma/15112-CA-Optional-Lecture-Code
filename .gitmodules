@@ -1,3 +1,6 @@
 [submodule "Pygame-Asteroids"]
 	path = Pygame-Asteroids
 	url = https://github.com/LBPeraza/Pygame-Asteroids.git
+[submodule "112-opencv-tutorial"]
+	path = 112-opencv-tutorial
+	url = https://github.com/VasuAgrawal/112-opencv-tutorial
