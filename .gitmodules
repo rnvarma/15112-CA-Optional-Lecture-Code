@@ -1,0 +1,3 @@
+[submodule "Pygame-Asteroids"]
+	path = Pygame-Asteroids
+	url = https://github.com/LBPeraza/Pygame-Asteroids.git
