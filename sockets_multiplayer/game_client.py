@@ -19,10 +19,11 @@ def handleServerMsg(server, serverMsg):
   while True:
     msg += server.recv(10).decode("UTF-8")
     command = msg.split("\n")
-    if (len(command) > 1):
+    while (len(command) > 1):
       readyMsg = command[0]
       msg = "\n".join(command[1:])
       serverMsg.put(readyMsg)
+      command = msg.split("\n")
 
 # events-example0.py
 # Barebones timer, mouse, and keyboard events

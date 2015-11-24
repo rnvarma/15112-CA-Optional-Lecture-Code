@@ -18,10 +18,11 @@ def handleClient(client, serverChannel, cID):
   while True:
     msg += client.recv(10).decode("UTF-8")
     command = msg.split("\n")
-    if (len(command) > 1):
+    while (len(command) > 1):
       readyMsg = command[0]
       msg = "\n".join(command[1:])
       serverChannel.put(str(cID) + "_" + readyMsg)
+      command = msg.split("\n")
 
 
 def serverThread(clientele, serverChannel):
